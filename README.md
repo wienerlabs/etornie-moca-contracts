@@ -122,13 +122,21 @@ All 25 tests pass locally (`forge test`).
 
 ## Deployed addresses
 
-> _Filled after testnet deploy._
+### Moca Testnet (chain ID `222888`)
 
-| Contract             | Testnet (222888)                            | Mainnet (2288) |
-|----------------------|---------------------------------------------|----------------|
-| `EtornieAttestation` | `TBD`                                       | —              |
-| `EtornieIpToken`     | `TBD`                                       | —              |
-| `EtornieZkVerifier`  | `TBD`                                       | —              |
+| Contract             | Address                                                                                                                       | Tx |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------|----|
+| `EtornieAttestation` | [`0x79987a54DB54680bd4c3Ac3AbF1E34D723180e56`](https://testnet-scan.mocachain.org/address/0x79987a54DB54680bd4c3Ac3AbF1E34D723180e56) | [`0xd7f218f6…02c3db`](https://testnet-scan.mocachain.org/tx/0xd7f218f6584fd696089c0a4ac537dc18b707cd8a13a850a668151d1f7f02c3db) |
+| `EtornieIpToken`     | [`0x81222d1f6FcA1b47F87F2ffDbBE77259Ce85ee2F`](https://testnet-scan.mocachain.org/address/0x81222d1f6FcA1b47F87F2ffDbBE77259Ce85ee2F) | [`0x9cc2a7fc…62dbb`](https://testnet-scan.mocachain.org/tx/0x9cc2a7fcfdce1ab4ff8f96a3dac09e9806b59e5d9d0e8434ec98a554c1462dbb) |
+| `EtornieZkVerifier`  | [`0xeeb6d9973437C54d000BF2388147ae179723DCfC`](https://testnet-scan.mocachain.org/address/0xeeb6d9973437C54d000BF2388147ae179723DCfC) | [`0xf4bdaa41…bb9c70c`](https://testnet-scan.mocachain.org/tx/0xf4bdaa417188bb012b9013663d0e2e93e77b6a01411442f89e2d0ad52bb9c70c) |
+
+Admin + operator on every contract: `0x6345eE23c81132A3b3245E2fcB55374205A2C8c4` (initial deployer; rotate via `grantRole` / `revokeRole` before mainnet).
+
+Deploy gas: ~0.0031 MOCA total (~3.1 M gas at ~1 Gwei) across the three contracts.
+
+### Moca Mainnet (chain ID `2288`)
+
+Not deployed yet.
 
 ## Related
 
