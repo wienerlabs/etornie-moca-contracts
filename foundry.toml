@@ -1,0 +1,21 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.24"
+evm_version = "shanghai"
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+fs_permissions = [{ access = "read", path = "./" }]
+
+[fuzz]
+runs = 256
+
+[rpc_endpoints]
+moca_testnet = "${MOCA_TESTNET_RPC}"
+moca_mainnet = "${MOCA_MAINNET_RPC}"
+
+[etherscan]
+moca_testnet = { key = "${MOCA_SCAN_KEY}", url = "https://testnet-scan.mocachain.org/api", chain = 222888 }
+moca_mainnet = { key = "${MOCA_SCAN_KEY}", url = "https://scan.mocachain.org/api", chain = 2288 }

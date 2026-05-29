@@ -1,0 +1,23 @@
+# Foundry build artifacts
+out/
+cache/
+broadcast/*/dry-run/
+
+# Local env (NEVER commit private keys)
+.env
+.env.local
+.env.*.local
+
+# Editors
+.vscode/
+.idea/
+.DS_Store
+
+# Node tooling (in case snarkjs verifier gen scripts get added)
+node_modules/
+dist/
+*.log
+
+# Foundry coverage
+lcov.info
+coverage/
